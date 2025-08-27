@@ -1,6 +1,6 @@
 name: 🐛 Bug Report
 description: Report a bug or issue with the project.
-title: "[BUG] : "
+title: "[BUG] Brief description of the issue: "
 labels: [bug]
 type: Bug
 body:
@@ -8,42 +8,125 @@ body:
     attributes:
       value: |
         Thank you for taking the time to report a bug!
-        Please fill out the form below to help us understand the issue.
+        Please fill out the form below with **detailed information** to help us understand and reproduce the issue.
+        
+        **⚠️ Important**: Low-quality reports with insufficient detail may be closed without investigation.
+        
+  - type: checkboxes
+    id: prerequisites
+    attributes:
+      label: 📋 Prerequisites
+      description: Please confirm you have completed these steps before submitting
+      options:
+        - label: I have searched existing issues to avoid duplicates
+          required: true
+        - label: I have provided sufficient detail to reproduce this issue
+          required: true
+        - label: I have included relevant error messages, logs, or screenshots
+          required: false
+          
   - type: textarea
     id: description
     attributes:
-      label: 📝 Description
+      label: 📝 Detailed Description
       description: >
-        Provide a clear and concise description of the bug.
-        Include any relevant information such as error messages, screenshots, or steps to reproduce.
+        Provide a clear and comprehensive description of the bug.
+        Include context about what you were doing, what you expected, and what actually happened.
+        **Minimum 50 characters required - single words or abbreviations are not acceptable.**
       placeholder: |
-        - What were you trying to do?
+        Example: "When attempting to process user login with valid credentials on the authentication page, 
+        I expected to be redirected to the dashboard. However, the page shows a 500 internal server error 
+        and remains on the login form. This occurs consistently with different user accounts."
+        
+        Please describe:
+        - What were you trying to accomplish?
         - What did you expect to happen?
-        - What actually happened?
+        - What actually happened instead?
+        - Any error messages or unusual behavior observed?
     validations:
       required: true
+      
   - type: textarea
     id: steps
     attributes:
       label: 🔍 Steps to Reproduce
       description: >
-        List the steps to reproduce the bug.
-        Include any specific configurations or settings that are relevant.
+        Provide detailed, step-by-step instructions to reproduce the bug.
+        Be specific about actions, inputs, and conditions. **At least 3 detailed steps required.**
       placeholder: |
-        1. Step one
-        2. Step two
-        3. Step three
+        Example:
+        1. Navigate to the login page (https://example.com/login)
+        2. Enter valid credentials: username "test@example.com", password "TestPass123"
+        3. Click the "Sign In" button
+        4. Observe that instead of redirecting to dashboard, a 500 error appears
+        5. Check browser console for additional error details
+        
+        **Note**: Vague steps like "do something" or single words are not acceptable.
     validations:
       required: true
+      
+  - type: textarea
+    id: environment
+    attributes:
+      label: 🌍 Environment Information
+      description: >
+        Provide details about your environment where the bug occurs.
+        This helps us reproduce the issue in the same conditions.
+      placeholder: |
+        - Operating System: (e.g., Windows 11, macOS 13.0, Ubuntu 22.04)
+        - Browser: (e.g., Chrome 120.0, Firefox 119.0, Safari 17.0)
+        - Project Version: (e.g., v2.1.0, commit abc123)
+        - Node.js Version: (if applicable, e.g., v18.17.0)
+        - Additional Tools: (any relevant software versions)
+    validations:
+      required: true
+      
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: ✅ Expected Behavior
+      description: Describe what should happen instead
+      placeholder: |
+        Example: "After successful login, I should be redirected to the user dashboard 
+        showing my profile information and recent activity."
+    validations:
+      required: true
+      
+  - type: textarea
+    id: actual_behavior
+    attributes:
+      label: ❌ Actual Behavior
+      description: Describe what actually happens (including error messages)
+      placeholder: |
+        Example: "The page displays a 500 Internal Server Error message and remains 
+        on the login form. Browser console shows: 'TypeError: Cannot read property 
+        user of undefined at /api/auth/login'."
+    validations:
+      required: true
+      
   - type: dropdown
     id: severity
     attributes:
-      label: 🚨 Severity
-      description: How severe is this bug?
+      label: 🚨 Severity Level
+      description: How severely does this bug impact functionality?
       options:
-        - 🟢 Low
-        - 🟡 Medium
-        - 🟠 High
-        - 🔴 Critical
+        - 🟢 Low - Minor inconvenience, workaround available
+        - 🟡 Medium - Moderate impact, affects some functionality
+        - 🟠 High - Significant impact, blocks important features
+        - 🔴 Critical - Severe impact, system unusable or data loss
     validations:
       required: true
+      
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: 📎 Additional Context
+      description: >
+        Add any other context, screenshots, logs, or files that might help.
+        Include links to related issues or relevant documentation.
+      placeholder: |
+        - Screenshots or screen recordings
+        - Log files or error traces
+        - Configuration files (remove sensitive data)
+        - Related issues or PRs
+        - Potential workarounds you've tried

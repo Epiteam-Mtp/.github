@@ -1,17 +1,17 @@
-blank_issues_enabled: true
+blank_issues_enabled: false
 
 issue_templates:
   - name: 📌 Feature Request
-    description: Suggest a new idea or enhancement.
+    description: Suggest a new idea or enhancement with detailed specifications.
     labels: [feature, enhancement]
     file: feature_request.yml
 
   - name: 🐛 Bug Report
-    description: Report a bug or unexpected behavior.
+    description: Report a bug with comprehensive details and reproduction steps.
     labels: [bug]
     file: bug_report.yml
 
   - name: ❓ Question
-    description: Ask a question or seek clarification.
+    description: Ask a well-formulated question or seek clarification.
     labels: [question]
     file: question.yml

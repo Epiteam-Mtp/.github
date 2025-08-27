@@ -1,6 +1,6 @@
 name: 📌 Feature Request
 description: Suggest a new idea, improvement, or enhancement.
-title: "[FEATURE] : "
+title: "[FEATURE] Brief description of the feature: "
 labels: [enhancement]
 type: Feature
 
@@ -9,7 +9,20 @@ body:
     attributes:
       value: |
         Thank you for taking the time to propose a new feature!
-        Please fill out the form below to help us understand your idea.
+        Please fill out the form below with **detailed information** to help us understand your idea.
+        
+  - type: checkboxes
+    id: prerequisites
+    attributes:
+      label: 📋 Prerequisites
+      description: Please confirm you have completed these steps
+      options:
+        - label: I have searched existing issues to avoid duplicates
+          required: true
+        - label: I have provided clear rationale for this feature
+          required: true
+        - label: I have considered the implementation complexity
+          required: true
   - type: textarea
     id: goal
     attributes:

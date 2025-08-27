@@ -1,13 +1,56 @@
 name: ❓ Question
 description: Ask a question or request clarification.
-title: "[QUESTION] : "
+title: "[QUESTION] Brief summary of your question: "
 labels: ["question"]
 type: Question
 
 body:
-  - type: input
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for asking a question!
+        Please provide clear and specific information to help us give you the best answer.
+        
+  - type: checkboxes
+    id: prerequisites
+    attributes:
+      label: 📋 Prerequisites
+      description: Please confirm you have completed these steps
+      options:
+        - label: I have searched existing issues and documentation for an answer
+          required: true
+        - label: I have provided sufficient context for my question
+          required: true
+          
+  - type: textarea
     id: question
     attributes:
-      label: Your question
-      description: Be as clear and specific as possible
-      placeholder: What is the expected behavior of X?
+      label: ❓ Your Question
+      description: >
+        Be as clear and specific as possible. Provide context about what you're trying to achieve.
+        **Please write a complete question - single words or vague phrases are not helpful.**
+      placeholder: |
+        Example: "I'm trying to implement user authentication in my React application using the 
+        provided auth service. However, I'm not sure how to handle token refresh when the initial 
+        token expires. What is the recommended approach for maintaining user sessions?"
+        
+        Please include:
+        - What you're trying to accomplish
+        - What specific aspect you need help with
+        - Any relevant context or constraints
+    validations:
+      required: true
+      
+  - type: textarea
+    id: context
+    attributes:
+      label: 🔍 Additional Context
+      description: >
+        Provide any additional information that might be relevant to your question.
+      placeholder: |
+        - What have you already tried?
+        - Are there any error messages?
+        - Links to relevant documentation or code
+        - Your current setup or environment details
+    validations:
+      required: false
