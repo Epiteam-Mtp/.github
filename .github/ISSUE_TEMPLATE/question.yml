@@ -1,8 +1,8 @@
 name: ❓ Question
 description: Ask a question or request clarification.
-title: "[QUESTION] : "
+title: ""
 labels: ["question"]
-assignees: []
+issue_type: Question
 
 body:
   - type: input
