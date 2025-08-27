@@ -1,4 +1,4 @@
-# Contributing to [Organization Name]
+# Contributing to Epiteam-Mtp
 
 First of all, thank you for considering contributing to our projects!
 By participating, you help us improve code quality, documentation, and workflows.
