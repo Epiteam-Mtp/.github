@@ -1,27 +1,43 @@
 name: 🐛 Bug Report
 description: Report a bug or issue with the project.
 title: "[BUG] : "
-labels: [bug]
 type: Bug
 body:
   - type: markdown
     attributes:
       value: |
         Thank you for taking the time to report a bug!
-        Please fill out the form below to help us understand the issue.
+        Please fill out the form below with **detailed information** to help us understand and reproduce the issue.
+
+  - type: checkboxes
+    id: prerequisites
+    attributes:
+      label: 📋 Prerequisites
+      description: Please confirm you have completed these steps before submitting
+      options:
+        - label: I have searched existing issues to avoid duplicates
+          required: true
+        - label: I have provided sufficient detail to reproduce this issue
+          required: true
+        - label: I have included relevant error messages, logs, or screenshots
+          required: false
+
+
   - type: textarea
     id: description
     attributes:
       label: 📝 Description
       description: >
-        Provide a clear and concise description of the bug.
-        Include any relevant information such as error messages, screenshots, or steps to reproduce.
+        Provide a clear and comprehensive description of the bug.
+        Include context about what you were doing, what you expected, and what actually happened.
       placeholder: |
-        - What were you trying to do?
+        - What were you trying to accomplish?
         - What did you expect to happen?
         - What actually happened?
+        - Any error messages or unusual behavior observed?
     validations:
       required: true
+
   - type: textarea
     id: steps
     attributes:
@@ -35,6 +51,7 @@ body:
         3. Step three
     validations:
       required: true
+
   - type: dropdown
     id: severity
     attributes:
@@ -47,3 +64,17 @@ body:
         - 🔴 Critical
     validations:
       required: true
+
+  - type: textarea
+      id: additional_context
+      attributes:
+        label: 📎 Additional Context
+        description: >
+          Add any other context, screenshots, logs, or files that might help.
+          Include links to related issues or relevant documentation.
+        placeholder: |
+          - Screenshots or screen recordings
+          - Log files or error traces
+          - Configuration files (remove sensitive data)
+          - Related issues or PRs
+          - Potential workarounds you've tried

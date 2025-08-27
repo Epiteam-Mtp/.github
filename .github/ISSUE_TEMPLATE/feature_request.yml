@@ -1,7 +1,6 @@
 name: 📌 Feature Request
 description: Suggest a new idea, improvement, or enhancement.
 title: "[FEATURE] : "
-labels: [enhancement]
 type: Feature
 
 body:
@@ -10,6 +9,16 @@ body:
       value: |
         Thank you for taking the time to propose a new feature!
         Please fill out the form below to help us understand your idea.
+
+  - type: checkboxes
+      id: prerequisites
+      attributes:
+        label: 📋 Prerequisites
+        description: Please confirm you have completed these steps before submitting
+        options:
+          - label: I have searched existing issues to avoid duplicates
+            required: true
+
   - type: textarea
     id: goal
     attributes:
@@ -23,6 +32,7 @@ body:
         - What problem does it solve, or what opportunity does it create?
     validations:
       required: true
+
   - type: textarea
     id: steps
     attributes:
@@ -37,6 +47,7 @@ body:
         - Step 4: Update the documentation to reflect the new feature
     validations:
       required: false
+
   - type: textarea
     id: tests
     attributes:
@@ -48,6 +59,7 @@ body:
         - Test Case 3: Describe the third test case
     validations:
       required: true
+
   - type: dropdown
     id: priority
     attributes:
@@ -60,6 +72,7 @@ body:
         - 🔴 Critical
     validations:
       required: true
+
   - type: input
     id: effort
     attributes:
