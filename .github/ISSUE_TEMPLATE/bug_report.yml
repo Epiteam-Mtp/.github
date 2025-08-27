@@ -2,7 +2,7 @@ name: 🐛 Bug Report
 description: Report a bug or issue with the project.
 title: "[BUG] : "
 labels: [bug]
-issue_type: Bug
+type: Bug
 body:
   - type: markdown
     attributes:

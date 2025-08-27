@@ -2,7 +2,7 @@ name: ❓ Question
 description: Ask a question or request clarification.
 title: ""
 labels: ["question"]
-issue_type: Question
+type: Question
 
 body:
   - type: input
