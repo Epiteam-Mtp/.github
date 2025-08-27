@@ -1,7 +1,7 @@
 blank_issues_enabled: false
 contact_links:
   - name: 📄 Contribution Guidelines
-    url: https://github.com/Epiteam-Mtp/.github/CONTRIBUTING.md
+    url: https://github.com/Epiteam-Mtp/.github/blob/main/CONTRIBUTING.md
     about: Please review the contribution guidelines before submitting an issue.
 
 issue_templates:
