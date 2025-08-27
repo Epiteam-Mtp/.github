@@ -41,9 +41,9 @@ body:
       label: 🚨 Severity
       description: How severe is this bug?
       options:
-        - 🔴 Critical
-        - 🟠 High
-        - 🟡 Medium
         - 🟢 Low
+        - 🟡 Medium
+        - 🟠 High
+        - 🔴 Critical
     validations:
       required: true

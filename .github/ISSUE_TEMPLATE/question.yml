@@ -1,6 +1,6 @@
 name: ❓ Question
 description: Ask a question or request clarification.
-title: ""
+title: "[QUESTION] : "
 labels: ["question"]
 type: Question
 

@@ -54,10 +54,10 @@ body:
       label: 🚩 Priority
       description: How important is this feature?
       options:
-        - 🔴 Critical
-        - 🟠 High
-        - 🟡 Medium
         - 🟢 Low
+        - 🟡 Medium
+        - 🟠 High
+        - 🔴 Critical
     validations:
       required: true
   - type: input
