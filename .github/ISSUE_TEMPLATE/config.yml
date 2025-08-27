@@ -1,10 +1,7 @@
 blank_issues_enabled: false
 contact_links:
-  - name: 💬 General Discussion
-    url: https://github.com/your-org/your-repo/discussions
-    about: Use GitHub Discussions for questions, ideas, or general conversations.
   - name: 📄 Contribution Guidelines
-    url: https://github.com/your-org/your-repo/blob/main/CONTRIBUTING.md
+    url: https://github.com/Epiteam-Mtp/.github/CONTRIBUTING.md
     about: Please review the contribution guidelines before submitting an issue.
 
 issue_templates:
