@@ -5,10 +5,10 @@ type: Question
 
 body:
   - type: markdown
-      attributes:
-        value: |
-          Thank you for asking a question!
-          Please provide clear and specific information to help us give you the best answer.
+    attributes:
+      value: |
+        Thank you for asking a question!
+        Please provide clear and specific information to help us give you the best answer.
 
   - type: textarea
     id: question

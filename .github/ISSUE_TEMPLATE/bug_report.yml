@@ -66,15 +66,15 @@ body:
       required: true
 
   - type: textarea
-      id: additional_context
-      attributes:
-        label: 📎 Additional Context
-        description: >
-          Add any other context, screenshots, logs, or files that might help.
-          Include links to related issues or relevant documentation.
-        placeholder: |
-          - Screenshots or screen recordings
-          - Log files or error traces
-          - Configuration files (remove sensitive data)
-          - Related issues or PRs
-          - Potential workarounds you've tried
+    id: additional_context
+    attributes:
+      label: 📎 Additional Context
+      description: >
+        Add any other context, screenshots, logs, or files that might help.
+        Include links to related issues or relevant documentation.
+      placeholder: |
+        - Screenshots or screen recordings
+        - Log files or error traces
+        - Configuration files (remove sensitive data)
+        - Related issues or PRs
+        - Potential workarounds you've tried
