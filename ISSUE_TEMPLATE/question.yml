@@ -1,0 +1,13 @@
+name: ❓ Question
+description: Ask a question or request clarification.
+title: "[QUESTION] "
+labels: ["question"]
+assignees: []
+
+body:
+  - type: input
+    id: question
+    attributes:
+      label: Your question
+      description: Be as clear and specific as possible
+      placeholder: What is the expected behavior of X?
