@@ -60,3 +60,12 @@ body:
         - Configuration files (remove sensitive data)
         - Related issues or PRs
         - Potential workarounds you've tried
+
+  - type: checkboxes
+    id: project_compliance
+    attributes:
+      label: ✅ Project Integration
+      description: Confirm that this issue includes the required project metadata.
+      options:
+        - label: I confirm that I have filled in all required fields in the GitHub Project (e.g. Priority, Status, Size, etc.)
+          required: true

@@ -59,3 +59,12 @@ body:
         - Test Case 3: Describe the third test case
     validations:
       required: true
+
+  - type: checkboxes
+    id: project_compliance
+    attributes:
+      label: ✅ Project Integration
+      description: Confirm that this issue includes the required project metadata.
+      options:
+        - label: I confirm that I have filled in all required fields in the GitHub Project (e.g. Priority, Status, Size, etc.)
+          required: true
