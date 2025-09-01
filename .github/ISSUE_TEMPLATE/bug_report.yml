@@ -17,11 +17,6 @@ body:
       options:
         - label: I have searched existing issues to avoid duplicates
           required: true
-        - label: I have provided sufficient detail to reproduce this issue
-          required: true
-        - label: I have included relevant error messages, logs, or screenshots
-          required: false
-
 
   - type: textarea
     id: description
@@ -49,19 +44,6 @@ body:
         1. Step one
         2. Step two
         3. Step three
-    validations:
-      required: true
-
-  - type: dropdown
-    id: severity
-    attributes:
-      label: 🚨 Severity
-      description: How severe is this bug?
-      options:
-        - 🟢 Low
-        - 🟡 Medium
-        - 🟠 High
-        - 🔴 Critical
     validations:
       required: true
 
