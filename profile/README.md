@@ -1,4 +1,4 @@
-# 🏢 Epiteam-Mtp
+# 🏢 MAJA-Epitech
 
 Welcome to the **official GitHub organization** for our team projects at **Epitech**!
 
@@ -39,4 +39,4 @@ We aim to **learn, experiment, and build portfolio-worthy projects** while keepi
 
 ---
 
-> _This organization is maintained by the Epiteam-Mtp. Happy coding!_
+> _This organization is maintained by the MAJA-Epitech. Happy coding!_
